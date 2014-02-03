@@ -66,9 +66,9 @@ class Stars:
 
 	def draw(self):
 		for star in self.__stars:
-			x, y = star['cords']
 			glPointSize(star['size'])
 			glBegin(GL_POINTS)
+			x, y = star['cords']
 			glColor3f(*star['color'])
 			glVertex2i(x + res.HALF_WIN_W, y + res.HALF_WIN_H)
 			glEnd()

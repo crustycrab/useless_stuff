@@ -8,7 +8,7 @@ config = pyglet.gl.Config(double_buffer=True)
 window = pyglet.window.Window(res.WIN_W, res.WIN_H, config=config)
 fps_display = pyglet.clock.ClockDisplay()
 
-radius = int((res.HALF_WIN_W**2+res.HALF_WIN_H**2)**0.5)
+radius = int((res.HALF_WIN_W**2 + res.HALF_WIN_H**2)**0.5)
 
 background = SmoothCircle((0.2, 0.2, 0.4, 1.0), (0.0, 0.0, 0.0, 1.0), radius * 2, 10)
 core       = SmoothCircle((0.0, 0.0, 0.0, 0.0), (0.4, 0.4, 0.4, 1.0), 80, 5)
